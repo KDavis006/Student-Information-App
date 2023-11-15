@@ -3,11 +3,21 @@ import StudentList from './StudentList';
 import StudentForm from './StudentForm';
 import '../College.css';
 
+const initialStudentData = `
+1,Devlin Van der Hoeven,Physics
+2,Jsandye Gilcrist,Biology
+3,Felipe Venditti,Physics
+4,Shir Langridge,Physics
+5,Giles Mackney,Computer Science
+6,Georgeanne Tooze,Biology
+7,Blondelle Nequest,Chemistry
+8,Arabel Imlacke,Mathematics
+9,Madella Sawers,Mathematics
+10,Amerigo O'Rowane,Computer Science
+`
+
 const College = () => {
-  const [students, setStudents] = useState([
-    { id: 1, name: 'John Doe', age: 20, course: 'Computer Science' },
-    { id: 2, name: 'Jane Doe', age: 22, course: 'Physics' },
-  ]);
+  const [students, setStudents] = useState(parseStudentData(initialStudentData));
 
   const handleAddStudent = (newStudent) => {
     setStudents([...students, { ...newStudent, id: Date.now() }]);
@@ -27,5 +37,15 @@ const College = () => {
     </div>
   );
 };
+
+function parseStudentData(data) {
+  return data
+    .trim() // Remove leading/trailing whitespace
+    .split('\n') // Split by newline to get an array of lines
+    .map((line) => {
+      const [id, name, course] = line.split(',');
+      return { id: parseInt(id), name, course };
+    });
+}
 
 export default College;

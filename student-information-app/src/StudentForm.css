@@ -5,14 +5,14 @@
 
 .student-form label {
  display: block;
- margin-bottom: 8px;
+ margin-bottom: 5px;
  color: #2ecc71;
 }
 
 .student-form input {
  width: 275px;
  padding: 10px;
- margin-bottom: 15px;
+ margin-bottom: 10px;
  border: 1px solid #3498db;
  border-radius: 5px;
 }

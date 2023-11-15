@@ -1,7 +1,7 @@
 .student {
  border: 2px solid #3498db;
- padding: 15px;
- margin-bottom: 15px;
+ padding: 10px;
+ margin-bottom: 10px;
  background-color: #ecf0f1;
  border-radius: 5px;
  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -13,4 +13,14 @@
 
 .student p {
  margin: 8px 0;
+}
+
+button {
+ width: 80%;
+ padding: 8px;
+ background-color: #3498db;
+ color: #fff;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
 }
