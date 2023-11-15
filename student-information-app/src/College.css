@@ -1,0 +1,13 @@
+.college {
+ width: 100%;
+ text-align: center;
+ padding: 20px;
+}
+
+.college h1 {
+ color: #2c3e50;
+}
+
+.college hr {
+ margin: 20px 0;
+}

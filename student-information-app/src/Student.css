@@ -1,0 +1,16 @@
+.student {
+ border: 2px solid #3498db;
+ padding: 15px;
+ margin-bottom: 15px;
+ background-color: #ecf0f1;
+ border-radius: 5px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.student h2 {
+ color: #3498db;
+}
+
+.student p {
+ margin: 8px 0;
+}
